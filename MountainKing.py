@@ -8,6 +8,8 @@ NoteC =
 NoteA = 
 NoteGs = 
 NoteD = 
+NoteG = 
+
 
 GPIO.setmode(GPIO.BCM)
 
@@ -17,14 +19,14 @@ GPIO.setup(NoteB,GPIO.OUT)
 GPIO.setup(NoteC,GPIO.OUT)
 GPIO.setup(NoteA,GPIO.OUT)
 GPIO.setup(NoteGs,GPIO.OUT)
+GPIO.setup(NoteG,GPIO.OUT)
+
 
 def E():
-        while True:
                 GPIO.output(NoteE,GPIO.HIGH)
                 time.sleep(.5)
                 
 def Ds():
-        while True:
                 GPIO.output(NoteDs,GPIO.HIGH)
                 time.sleep(.5)
 
@@ -38,19 +40,21 @@ def C():
                 time.sleep(.5)
 
 def A():
-        while True:
                 GPIO.output(NoteA,GPIO.HIGH)
                 time.sleep(.5)
 
 def Gs():
-        while True:
                 GPIO.output(NoteGs,GPIO.HIGH)
                 time.sleep(.5)
 
 def D():
-        while True:
                 GPIO.output(NoteD,GPIO.HIGH)
                 time.sleep(.5)
+                
+def G():
+                GPIO.output(NoteG,GPIO.HIGH)
+                time.sleep(.5)
+
 
 C()
 D()
