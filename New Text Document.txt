@@ -1,0 +1,70 @@
+from tkinter import *
+
+class Window(Frame):
+
+    def __init__(self, master=None):
+        Frame.__init__(self, master)        
+        self.master = master
+
+        #--------------------------------------------------------------------------------------------------------------------------
+
+        # widget can take all window
+        self.pack(fill=BOTH, expand=1)
+
+        # create button, link it to playSongOne()
+        playSongOne = Button(self, text="In the Hall of the Mountain King", bg='#42b6f5', fg='White') #command=self.playSongOne
+
+        # place button at (50,150)
+        playSongOne.place(relx=0.5, y=25, anchor=CENTER)
+
+        playSongTwo = Button(self, text="Turkish March", bg='#42b6f5', fg='White') #command=self.playSongTwo
+
+        
+        playSongTwo.place(relx=0.5, y=51, anchor=CENTER)
+
+        playSongThree = Button(self, text="Für Elise", bg='#42b6f5', fg='White') #command=self.playSongThree
+
+        
+        playSongThree.place(relx=0.5, y=77, anchor=CENTER)
+        #--------------------------------------------------------------------------------------------------------------------------
+        
+        pauseSong = Button(self, text= u'\u23f8', bg='#f73939', fg='White',height= 2, width=4)
+        pauseSong.place(x=75, y=225)
+
+        playSong = Button(self, text= u'\u25b6', bg='#f73939', fg='White',height= 2, width=4)
+        playSong.place(x=150, y=225)
+
+        stopSong = Button(self, text= u'\u23f9', bg='#f73939', fg='White',height= 2, width=4)
+        stopSong.place(x=225, y=225)
+
+        skipSong = Button(self, text= u'\u23ed', bg='#f73939', fg='White',height= 2, width=4)
+        skipSong.place(x=300, y=225)
+
+        songLabel = Label(self, text= "This is the song playing")
+        songLabel.place(x=140, y=120)
+        songLabel2 = Label(self, text= "In the Hall of the Mountain King", font = ("Arial", 13), bg='#7a7872', fg='White')
+        songLabel2.place(x=90, y=170)
+
+        #--------------------------------------------------------------------------------------------------------------------------
+
+    def playSongOne(self):
+        exit()
+    def playSongTwo(self):
+        exit()
+    def playSongThree(self):
+        exit()
+    def pauseSong(self):
+        exit()
+    def playSong(self):
+        exit()
+    def stopSong(self):
+        exit()
+    def skipSong(self):
+        exit()
+
+       
+root = Tk()
+app = Window(root)
+root.wm_title("Organ Player")
+root.geometry("400x300")
+root.mainloop()
