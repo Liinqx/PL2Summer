@@ -4,11 +4,11 @@ import time
 NoteE =
 NoteDs = 
 NoteB = 
-NoteC = 
-NoteA = 
-NoteGs = 
+NoteC = 2
+NoteA = 14
+NoteG = 3
 NoteD = 
-NoteF = 
+NoteF = 15
 
 
 GPIO.setmode(GPIO.BCM)
@@ -18,7 +18,7 @@ GPIO.setup(NoteDs,GPIO.OUT)
 GPIO.setup(NoteB,GPIO.OUT)
 GPIO.setup(NoteC,GPIO.OUT)
 GPIO.setup(NoteA,GPIO.OUT)
-GPIO.setup(NoteGs,GPIO.OUT)
+GPIO.setup(NoteG,GPIO.OUT)
 GPIO.setup(NoteF,GPIO.OUT)
 
 
